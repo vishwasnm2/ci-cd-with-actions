@@ -5,22 +5,10 @@ on:
     branches:
     - main
     - releases/*
-
-env:
-  owner: <vishwasnm2>
-  domain: github.io
-  name: React App CD
-
-on:
-  push:
-    branches:
-    - main
-    - releases/*
-
 env:
   owner: <owner>
   domain: github.io
-  jobs:
+jobs:
   deploy-dev-test:
     name: Deploy to Dev test environment
     runs-on: ubuntu-latest
